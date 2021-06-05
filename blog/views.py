@@ -4,6 +4,7 @@ from blog.models import Post
 
 class PostListView(ListView):
     model = Post
+    ordering = "-created_at"
     template_name = "post_list.html"
     context_object_name = "posts"
 
