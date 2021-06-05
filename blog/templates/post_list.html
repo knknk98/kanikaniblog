@@ -13,7 +13,7 @@
                 {{post.created_at}}
             </h6>
             <p class="card-text">
-                {{post.body|truncatechars:180}}
+                {{post.body|truncatechars:180|safe}}
             </p>
             <a href="{% url 'post_detail' post.id %}">記事を読む</a>
         </div>
