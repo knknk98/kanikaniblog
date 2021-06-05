@@ -7,7 +7,7 @@
         <div class="card-body">
             <h2 class="card-title">{{post.title}}</h2>
             <p class="card-subtitle mb-3 text-muted">{{post.created_at}}</p>
-            <p>{{post.body|linebreaksbr|urlize}}</p>
+            <p>{{post.body|safe}}</p>
         </div>
 
         <div>
